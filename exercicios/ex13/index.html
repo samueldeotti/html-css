@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de fundo</title>
+
+    <style>
+
+        div.quadrado{
+            border: 1px solid black;
+            width: 500px;
+            height: 500px;
+            display: inline-block;
+            border-radius: 10px;
+            
+        }
+
+        div#q1{
+            background-color: rgb(17, 163, 221);
+        }
+
+        div#q2{
+            background-image: linear-gradient(to bottom, yellow, orange);
+        }
+        div#q3{
+            background-image: url(imagens/imagens-cap19/pattern003.png);
+        }
+
+        body{
+
+            background-color: black;
+
+            background-image: url(imagens/imagens-cap19/wallpaper002.jpg); /*Coloca a imagem de fundo*/
+            
+            background-position: center center; /*Serve para escolher onde vai ser a ancoragem da pagina no site, right top, right bottom, left top, left bottom, left center, right center*/
+
+            background-repeat: no-repeat; /*Serve para escolher se a imagem vai repetir ou não caso o tamanho dela chegue no maximo, pode ser, repeat-x, repeat-x, repeat, no-repeat*/
+               
+            background-attachment: fixed; /*Serve para decidir como vai ficar a imagem, scroll ou fixed*/
+
+            background-size: cover; /*Serve para dizer qual vai ser o tamanho da imagem de fundo*/  
+            
+            
+            /* Shorthand Segue a ordem -> background:
+            color - image - position - repeat - attachment  || Ainda sim, depois do shorthand tem que colocar o backgroud-size igual
+            
+            Exemplo:
+            background: black url(imagens/imagens-cap19/wallpaper002.jpg) center center no-repeat fixed;
+
+            background-size: cover;   
+        }
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <div class="quadrado" id="q1">
+
+
+    </div>
+
+
+    <div class="quadrado" id="q2">
+
+
+    </div>
+
+
+    <div class="quadrado" id="q3">
+
+
+    </div>
+
+</body>
+</html>
