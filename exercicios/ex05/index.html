@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGINAS</title>
+</head>
+<body>
+    
+    <h1>Paginas externas</h1>
+    <p>para colocar pagina externa é usado a angoragem, a href, por exemplo <a href="https://www.google.com/webhp?hl=pt-BR&sa=X&ved=0ahUKEwiEo4rzo4T-AhWMqJUCHQ84AU8QPAgI" target="_blank" rel="external">Site do google</a></p>
+    <hr>
+    <h1>Paginas Internas</h1>
+    <p>para colocar pagina interna é usado a angoragem, a href, por exemplo <a href="segpag.html" target="_self" rel="next">Segunda Pagina</a></p>
+
+    <h1>Links para download</h1>
+    <ul>
+        <li> <a href="As 1 - temaas transversais.pdf" download="Temas transversais" type="application/pdf">Baixar o PDF</a></li>
+        <li><a href="Calendário Trybe 2023 (1).png" download="Calendario Trybe" type="application.png">Calendario Trybe</a></li>
+
+    </ul>
+
+    <hr>
+    <br>
+    <br>
+
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Reproduzindo audios em HTML 5</p>
+    <br>
+    <p>Audio 1 (musica)</p>
+    <audio preload="metadata" controls loop> <!-- O PRELOAD SERVE PARA CARREGAR AS INFORMAÇÕES DO AUDIO ASSIM QUE ENTRA NA PAGINA, O autoplay, TOCA AUTOMATICO QUANDO ENTRA NO SITE, E PARA APARECER O ICONE DE CLICAR NO AUDIO É controls, JA O loop REPETE O AUDIO QUANDO ELE ACABAR-->
+        
+        <!-- PRIMEIRO ELE VAI TENTAR PEGAR O MP3, SE NAO CONSEGUIR ELE TENTA COM OS OUTROS, NA RESPECTIVA ORDEM.-->
+        <source src="midias/Big River - Telecasted.mp3" type="audio/mpeg">
+        <source src="midias/Big River - Telecasted.ogg" type="audio/ogg">
+        <source src="midias/Big River - Telecasted.wav" type="audio/wav">
+        <p>Infelizmente seu anvegador não consegue reprodudizr o áudio.<a href="midias/Big River - Telecasted.mp3">Clique Aqui para baixar o arquivo MP3</a> </p>
+    </audio>
+
+    <br>
+    <p>Audio 2 (fogueira)</p>
+    <audio preload="metadata" controls>
+        <source src="midias/Daytime Forrest Bonfire.mp3" type="audio/mpeg">
+        <source src="midias/Daytime Forrest Bonfire.ogg" type="audio/ogg">
+        <source src="midias/Daytime Forrest Bonfire.wav" type="audio/wav">
+        <p>Infelizmente seu anvegador não consegue reprodudizr o áudio.<a href="midias/Daytime Forrest Bonfire.mp3">Clique Aqui para baixar o arquivo MP3</a> </p>
+    </audio>
+
+
+
+
+
+</body>
+</html>

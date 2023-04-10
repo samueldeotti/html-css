@@ -1,0 +1,30 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, #6188FF, #071F66);
+}
+
+p{
+    text-align: justify; /*Deixa o texto mais bonito*/
+}
+
+main{
+    background-color: white;
+    width: 700px; 
+    padding: 10px; 
+    border-radius: 7px; /*As bordas ficam arredondadas*/
+    margin: auto; /*Centraliza independente do tamanho da tela*/
+    box-shadow: 5px 5px 10px #060c1f9c; /*Cria uma sombra, o primeiro parametro é o quanto a sombra vai pro lado, o segundo é quanto a asombra vai pra baixo, o terceito é o esplhamento da sombra, e o ultimo é a cor*/
+    margin-top: 100px;
+}
+
+h1{
+    color: #0f1d46;
+    text-align: center;
+    text-shadow: 1px 1px 2px #04091688;
+}
+h2{
+    color: #071F66;
+}
