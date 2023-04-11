@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionanto todos os itens de uma coluna</title>
+    <style>
+
+        table{
+            border-collapse: collapse;
+            width: 2000px;
+            height: 300px;
+        }
+
+        td, th{
+            border: 1px solid black;
+        }
+    
+        col.cnome{
+            background-color: aqua;
+        }
+
+        div{
+            overflow: auto;
+            width: 70vw; /*Pra deixar a table com 70% do tamanho da tela 70 view-width*/
+        }
+    </style>
+
+    <!--Tabela responsiva
+    Para fazer isso, basta colocar a tabela numa div e depois formatar no css, colocar overflow: auto. Só isso.
+    
+    
+    -->
+
+
+</head>
+<body>
+
+    <h1>Tabela</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio omnis neque laudantium quam deserunt, cumque error, veritatis quo enim exercitationem similique? Nam numquam eaque nesciunt excepturi ipsum neque recusandae totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quasi sed nemo quibusdam odio aliquid dicta ipsum, a minus consequuntur praesentium molestiae ullam consequatur laborum laudantium excepturi facere mollitia necessitatibus?</p>
+    <div>
+        <table>
+            <colgroup> <!--Aqui pode ser atribuido uma classe a cada coluna, o que facilita quando for mexer na coluna inteira
+        
+            Pode ser colocado o span="2", que no caso ele vai pegar 2colunas exemplo: <col class="cnome" span="2">-->
+                <col class="cnome">
+                <col class="csexo">
+                <col class="cidade">
+                <col class="cprof">
+            </colgroup>
+            <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

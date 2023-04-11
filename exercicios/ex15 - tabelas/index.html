@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas simples</title>
+    <style>
+
+        table{
+            width: 700px;
+            height: 700px;
+            margin: auto; /*Centraliza a tabela*/
+            
+            border-collapse: collapse; /*Junta as bordas da tabela, fica uma tabela padrão*/
+            
+        }
+        td{ /*A borda precisa ser no td, pois é o item dentro da tabela e as bordas são geradas em volta dele. No td altera sobre todos os elementos, no tr altera apenas dentro da linha */
+            border: 1px solid black;
+            padding: 10px;
+            border-color: blue;
+            text-align: center; /*Centraliza os itens dentro da tabela, é o alinhamento horizontal dos itens*/
+            vertical-align: middle; /*É o alinhamento vertical dos itens dentro da tabela*/
+            
+        }
+
+        tr{
+            background-color: gray;
+            
+        }
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <table> <!--Cria a tabela-->
+        <tr> <!--Adiciona a Linha na tabela-->
+            <td>A1</td> <!--Adiciona o conteudo dentro-->
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+
+
+
+
+    </table>
+
+
+
+
+</body>
+</html>
