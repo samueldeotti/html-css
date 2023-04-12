@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+
+    <h1>Meu primeiro formulario</h1>
+
+
+
+    <!--Tem dois metodos para fazer o envio do formulario, o GET e o POST, o get é o menus seguro, pq as informações do furmalrio aparecem na url do site, ja o post as informações não aparecem-->
+    <form action="cadastro.php" method="post" autocomplete="off"><!--Serve para fazer o envio do formulario, o action é o scrip que vai rodar, o autocomplete é quando aparece os dados que ja foram colocados-->
+        <p><label for="inome">Nome:</label><!--O label é usado como uma referencia para o campo que voce criou, eles ficam ligados-->
+            <input type="text" name="nome" id="inome"></p> <!--O input serve para criar a caixa para digitar as informações-->
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p> <!--Cria o botao para enviar o formulario-->
+    </form>
+</body>
+</html>

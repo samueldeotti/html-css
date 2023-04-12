@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+    <form action="cadastro.php" method="post">
+        <p><label for="iusu">Usuario</label>
+        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" placeholder="nome do usuario" autocomplete="username"> <!--Para colocar um tamanho minimo basta usar o minlength e o maximo maxlength
+
+        O placeholder serve para colocar uma dica do que é pra ser digitado
+
+        Pode ser usado o autcomplete dentro do input, ai da pra selecionar qual autocomplete ele vai usar, por exemplo: senha, usuario, nome, etc-->
+        </p>
+        <p><label for="isen">Senha: </label> 
+            <input type="password" name="sen" id="isen" required minlength="8" placeholder="senha" autocomplete="current-password">
+        </p> <!--Para colocar um campo obrigatorio, basta colocar o required no input-->
+        <br>
+        <p><label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" value="5">
+        </p> <!--Só é aceito numeros e com o min 0 e max 10
+            
+            O step serve para dizer de quanto cada número vai pular
+        
+            O value serve para ja vir com um valor padrão
+            -->
+        <p>
+            <label for="imes"></label>
+            <input type="month" name="mes" id="imes"> <!--Cria um de mês-->
+        </p>
+        <p>
+            <label for="idia"></label>
+            <input type="date" name="dia" id="idia"> <!--Cria um de dia-->
+        </p>
+
+        <fieldset> <!--Cria uma borda em volta-->
+            <legend>Hora</legend> <!-- Cria uma legenda pro quadrp-->
+            <p>
+                <label for="ihora"></label>
+                <input type="time" name="hora" id="ihora"> <!--Cria um de hora-->
+            </p>
+        </fieldset>
+
+
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor"> <!--Cria um de cor-->
+        </p>
+        <p>
+            <label for="inivel">Satisfação do curso:</label>
+            <input type="range" name="nivel" id="inivel" min="0" max="5" value="5"> <!--Cria um de barra lateral-->
+        </p>
+        <p>
+            <label for="ifoto">Cor:</label>
+            <input type="file" name="foto" id="ifoto"> <!--Cria um de arquivo-->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar"> <!--Coloca um campo que impa os dados-->
+        </p>
+
+
+
+    </form>
+    
+</body>
+</html>
